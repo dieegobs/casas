@@ -1,0 +1,17 @@
+<div class="panel panel-default" ng-init="getCasas()">
+  <div class="panel-heading">
+    <h3 class="panel-title">Mais recentes</h3>
+  </div>
+	  <div class="panel-body">
+	    <div class="row">
+	    	<div ng-repeat="casa in casas">
+	    		<div class="col-md-6">
+	    			<div class="col-md-6">
+						{{casa.name}}
+						<a class="btn btn-primary" href="#/casas/details/{{casa._id}}">Detalhes</a>
+	    			</div>
+	    		</div>
+	    	</div>
+	  	</div>
+	</div>
+</div>
